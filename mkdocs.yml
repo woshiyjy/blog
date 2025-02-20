@@ -62,8 +62,8 @@ nav:
 copyright: Copyright &copy; 2024 My Project
 
 # GitHub 仓库链接 - 添加到导航栏
-repo_url: https://github.com/woshiyjy/mkdocs
-repo_name: mkdocs
+repo_url: https://github.com/woshiyjy/blog
+repo_name: blog
 
 # 网站 URL - 用于生成永久链接
-site_url: https://woshiyjy.github.io/mkdocs
+site_url: https://woshiyjy.github.io/blog
