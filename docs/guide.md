@@ -55,4 +55,4 @@ print("Hello World")
 1. 将修改提交到 Git 仓库
 2. 推送到 GitHub 的 main 分支
 3. GitHub Actions 会自动构建并部署更新
-4. 访问 https://woshiyjy.github.io/mkdocs 查看最新内容
+4. 访问 https://woshiyjy.github.io/blog 查看最新内容
