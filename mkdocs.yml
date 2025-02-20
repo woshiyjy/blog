@@ -1,0 +1,67 @@
+# 网站名称
+site_name: 袁静远的博客
+
+# 主题配置
+theme:
+  # 使用 Material 主题
+  name: material
+  # 主题功能特性配置
+  features:
+    - navigation.tabs      # 使用导航标签页
+    - navigation.sections  # 导航显示章节
+    - toc.integrate       # 目录集成
+    - navigation.top      # 返回顶部按钮
+    - search.suggest      # 搜索建议
+    - search.highlight    # 搜索结果高亮
+    - content.tabs.link   # 内容标签页链接
+    - content.code.annotation  # 代码注释
+    - content.code.copy   # 代码复制按钮
+  # 设置语言为中文
+  language: zh
+  # 配置颜色主题
+  palette:
+    # 浅色主题
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: teal    # 主色调
+      accent: purple   # 强调色
+    # 深色主题
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: teal    # 主色调
+      accent: lime     # 强调色
+
+# Markdown 扩展配置
+markdown_extensions:
+  - pymdownx.highlight:      # 代码高亮
+      anchor_linenums: true  # 行号锚点
+  - pymdownx.inlinehilite   # 行内代码高亮
+  - pymdownx.snippets       # 代码片段
+  - admonition             # 提示块
+  - pymdownx.arithmatex:    # 数学公式
+      generic: true
+  - footnotes              # 脚注
+  - pymdownx.details       # 详细信息
+  - pymdownx.superfences   # 超级围栏
+  - pymdownx.mark          # 文本标记
+  - attr_list              # 属性列表
+  - pymdownx.emoji:        # emoji 表情
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+# 导航配置
+nav:
+  - 主页: index.md
+  - 编辑指南: guide.md
+
+# 版权信息
+copyright: Copyright &copy; 2024 My Project
+# GitHub 仓库链接
+repo_url: https://github.com/woshiyjy/mkdocs
+repo_name: mkdocs
+# 网站 URL
+site_url: https://woshiyjy.github.io/mkdocs
