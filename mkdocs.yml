@@ -67,3 +67,13 @@ repo_name: blog
 
 # 网站 URL - 用于生成永久链接
 site_url: https://woshiyjy.github.io/blog
+
+# 图片处理配置
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/woshiyjy
+  # 启用图片缩放功能
+  feature:
+    content.image.lazy: true     # 启用图片懒加载
+    content.image.zoom: true      # 启用图片点击放大
