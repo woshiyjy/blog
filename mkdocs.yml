@@ -1,67 +1,69 @@
-# 网站名称
+# 网站名称 - 将显示在浏览器标签和网站顶部
 site_name: 袁静远的博客
 
-# 主题配置
+# 主题配置 - 定义网站的外观和功能
 theme:
-  # 使用 Material 主题
+  # 使用 Material 主题 - 一个现代化、响应式的主题
   name: material
-  # 主题功能特性配置
+  # 主题功能特性配置 - 可以根据需要启用或禁用
   features:
-    - navigation.tabs      # 使用导航标签页
-    - navigation.sections  # 导航显示章节
-    - toc.integrate       # 目录集成
-    - navigation.top      # 返回顶部按钮
-    - search.suggest      # 搜索建议
-    - search.highlight    # 搜索结果高亮
-    - content.tabs.link   # 内容标签页链接
-    - content.code.annotation  # 代码注释
-    - content.code.copy   # 代码复制按钮
-  # 设置语言为中文
+    - navigation.tabs      # 使用导航标签页 - 在顶部显示主要分类
+    - navigation.sections  # 导航显示章节 - 使用折叠式侧边导航
+    - toc.integrate       # 目录集成 - 将目录集成到导航面板中
+    - navigation.top      # 返回顶部按钮 - 快速返回页面顶部
+    - search.suggest      # 搜索建议 - 在搜索时显示建议结果
+    - search.highlight    # 搜索结果高亮 - 高亮显示搜索匹配内容
+    - content.tabs.link   # 内容标签页链接 - 同步切换相关标签页
+    - content.code.annotation  # 代码注释 - 支持代码块中的注释功能
+    - content.code.copy   # 代码复制按钮 - 添加代码块复制功能
+  # 设置语言为中文 - 影响界面元素的显示语言
   language: zh
-  # 配置颜色主题
+  # 配置颜色主题 - 支持浅色和深色两种模式
   palette:
-    # 浅色主题
+    # 浅色主题配置
     - scheme: default
       toggle:
-        icon: material/toggle-switch-off-outline 
-        name: Switch to dark mode
-      primary: teal    # 主色调
-      accent: purple   # 强调色
-    # 深色主题
+        icon: material/toggle-switch-off-outline # 主题切换图标
+        name: Switch to dark mode                # 切换按钮提示文本
+      primary: teal    # 主色调 - 用于顶部栏和链接
+      accent: purple   # 强调色 - 用于突出显示的元素
+    # 深色主题配置
     - scheme: slate 
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode    
-      primary: teal    # 主色调
-      accent: lime     # 强调色
+      primary: teal    # 深色模式下的主色调
+      accent: lime     # 深色模式下的强调色
 
-# Markdown 扩展配置
+# Markdown 扩展配置 - 增强 Markdown 的功能
 markdown_extensions:
-  - pymdownx.highlight:      # 代码高亮
-      anchor_linenums: true  # 行号锚点
-  - pymdownx.inlinehilite   # 行内代码高亮
-  - pymdownx.snippets       # 代码片段
-  - admonition             # 提示块
-  - pymdownx.arithmatex:    # 数学公式
-      generic: true
-  - footnotes              # 脚注
-  - pymdownx.details       # 详细信息
-  - pymdownx.superfences   # 超级围栏
-  - pymdownx.mark          # 文本标记
-  - attr_list              # 属性列表
-  - pymdownx.emoji:        # emoji 表情
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:      # 代码高亮扩展
+      anchor_linenums: true  # 为代码行添加锚点，方便引用
+  - pymdownx.inlinehilite   # 支持行内代码高亮
+  - pymdownx.snippets       # 支持代码片段引用
+  - admonition             # 提示块功能，用于添加提示、警告等
+  - pymdownx.arithmatex:    # 数学公式支持
+      generic: true         # 使用通用的数学公式渲染
+  - footnotes              # 支持脚注功能
+  - pymdownx.details       # 可折叠的内容块
+  - pymdownx.superfences   # 增强的代码块功能
+  - pymdownx.mark          # 文本标记功能
+  - attr_list              # HTML 属性列表支持
+  - pymdownx.emoji:        # emoji 表情支持
+      emoji_index: !!python/name:materialx.emoji.twemoji      # 使用 twemoji 表情包
+      emoji_generator: !!python/name:materialx.emoji.to_svg   # 生成 SVG 格式表情
 
-# 导航配置
+# 导航配置 - 定义网站的导航结构
 nav:
-  - 主页: index.md
-  - 编辑指南: guide.md
+  - 主页: index.md         # 网站首页
+  - 编辑指南: guide.md     # 文档编辑指南页面
 
-# 版权信息
+# 版权信息 - 显示在页面底部
 copyright: Copyright &copy; 2024 My Project
-# GitHub 仓库链接
+
+# GitHub 仓库链接 - 添加到导航栏
 repo_url: https://github.com/woshiyjy/mkdocs
 repo_name: mkdocs
-# 网站 URL
+
+# 网站 URL - 用于生成永久链接
 site_url: https://woshiyjy.github.io/mkdocs
