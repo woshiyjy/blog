@@ -69,6 +69,13 @@ repo_name: blog
 # 网站 URL - 用于生成永久链接
 site_url: https://woshiyjy.github.io/blog
 
+# 基础URL配置
+site_url: https://woshiyjy.github.io/blog
+use_directory_urls: true
+
+# 构建目录配置
+site_dir: public
+
 # 图片处理配置
 extra:
   social:
