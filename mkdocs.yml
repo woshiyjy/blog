@@ -1,5 +1,5 @@
 # 网站名称 - 将显示在浏览器标签和网站顶部
-site_name: 袁静远的博客
+site_name: 袁静远
 
 # 主题配置 - 定义网站的外观和功能
 theme:
@@ -55,8 +55,9 @@ markdown_extensions:
 
 # 导航配置 - 定义网站的导航结构
 nav:
-  - 主页: index.md         # 网站首页
-  - 编辑指南: guide.md     # 文档编辑指南页面
+  - 自我介绍: index.md         # 网站首页
+  - 项目经历: project.md     # 项目经历
+  - 教育经历: educate.md     # 教育经历
 
 # 版权信息 - 显示在页面底部
 copyright: Copyright &copy; 2024 My Project
